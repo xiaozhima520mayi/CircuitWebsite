@@ -1,0 +1,70 @@
+﻿.content{ overflow-x:hidden; position:relative;}
+.mid1{ background:#eaeff3;height:580px; position:relative; padding:90px 0;}
+.m1{ position:absolute; left:0; top:0;  z-index:0;}
+.left{ padding-left:15px;}
+.title{ font-size:30px; font-weight:bold; color:#1c1c1c;}
+.title span{ font-size:16px; color:#1c1c1c;}
+.right{ position:relative}
+.clocks{ position:absolute; left:5px; top:20px;}
+.intro{ margin-left:90px;}
+.intro h2 {
+    color: #1b70a4;
+    font-size: 20px; font-weight:bold;}
+.intro p{ line-height:30px;color:#585858;text-align:Justify;text-justify:inter-ideograph;}
+.more {
+    margin-top:40px;
+    display:inline-block;
+    border: 2px solid #ee6e23;
+    color: #ee6e23;
+    padding: 12px 36px;
+    background:none;
+    position:relative; overflow:hidden;transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease 0s; z-index:0;
+}
+.more::before {
+    background-color: #ffd460;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    width: 0;
+    z-index: -1;
+}
+.more:hover,.mid2 .more:hover {
+    color: #27323a;
+}
+.more:hover:hover::before {
+    width: 110%;
+}
+@media (max-width: 600px) {
+    .mid1{ padding:10px 0}
+    .title{ font-size:18px;}
+    .title span{ font-size:12px;}
+    .intro{ margin-left:70px;}
+    .intro h2 { font-size:16px; line-height:24px;}
+    .intro p{ font-size:12px; line-height:22px;}
+}
+
+.mid2{ background:#fff;min-height:400px; position:relative; padding:60px 0; overflow:hidden;}
+.mid2 .more{float:right;border-color:#ffaf36;color:#ffaf36; margin-right:5px;}
+.mid2 .title{ margin-left:5px;  }
+.mid2 ul{border-right:#ddd 1px solid; overflow:hidden;margin:10px 5px 0;}
+.mid2 li{ float:left;width:20%; border-radius:0; border-right:none; margin-bottom:0;padding:15px 0; overflow:hidden;}
+.mid2 li p{ line-height:30px; text-align:center;}
+.mid2 li p a{display:block;}
+.mid2 li a img{transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;}
+.mid2 li a:hover img{ transform:translateY(-5px);-webkit-transform:translateY(-5px); opacity:0.8;}
+.mid2 li a{
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;}
+.mid2 li:hover a{ transform:translateY(-3px);-webkit-transform:translateY(-3px);}
+
+@media (max-width: 768px) {
+    .mid2 ul{border-bottom:#ddd 1px solid;}
+    .mid2 li{ width:100%; border-bottom:none;}
+    .mid2 .more{padding: 6px 18px; margin-top:20px;}
+}
